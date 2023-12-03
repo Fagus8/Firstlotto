@@ -105,7 +105,7 @@ myr.addEventListener("click", function () {
   for (let n of mynumber) {
     n.style.pointerEvents = "auto";
   }
-
+  myh1.innerText =""
   myb.style.pointerEvents = "auto";
   count = 0; 
   count1 = 0;
