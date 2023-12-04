@@ -8,7 +8,9 @@ body {
   display: flex;
 
   flex-direction: column;
-  background-color: #30425d;
+ background-image: url(https://wallpapers.com/images/hd/black-and-yellow-lottery-balls-uyilierj0p5tgevw.jpg);
+background-repeat: no-repeat;
+ background-size:cover;
 }
 .winning {
   margin: 0;
@@ -28,13 +30,13 @@ body {
   flex-wrap: wrap;
 
   gap: 20px;
-  background-color: #30425d;
+ 
 }
 .b {
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid aqua;
+  border: 1px solid rgb(229, 255, 0);
   background-color: transparent;
   color: white;
   margin-top: 10px;
@@ -46,8 +48,8 @@ body {
 .gameNumber {
   font-size: 72px;
   background: -webkit-linear-gradient(
-    rgba(242, 41, 91, 1),
-    rgba(0, 212, 255, 1)
+    rgb(14, 14, 14),
+    rgb(229, 255, 0)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -68,7 +70,7 @@ body {
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid aqua;
+  border: 1px solid rgb(229, 255, 0);
   background-color: transparent;
   color: white;
   margin-top: 10px;
@@ -102,7 +104,7 @@ body {
   align-items: center;
   display: flex;
   border-radius: 50%;
-  border: 5px solid aqua;
+  border: 5px solid rgb(229, 255, 0);
   color: white;
   font-size: 40px;
 }
@@ -128,4 +130,5 @@ body {
 p {
   padding: 0;
   margin: 0;
+ 
 }
