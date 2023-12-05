@@ -22,12 +22,12 @@ background-repeat: no-repeat;
 }
 .container {
   display: flex;
-  width: 70%;
-  height: 40%;
+   flex-direction: column;
+  height: 100%;
 
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+
 
   gap: 20px;
  
@@ -57,7 +57,7 @@ background-repeat: no-repeat;
 }
 .w {
   display: flex;
-
+justify-content: center;
   gap: 15px;
 }
 .v {
@@ -76,21 +76,24 @@ background-repeat: no-repeat;
   margin-top: 10px;
   margin-left: 5px;
 }
+.r {
+  max-width: 100%;
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+}
 .rr:hover {
   cursor: pointer;
 }
-.r {
-  display: flex;
- 
-  
-  flex-direction: column;
-}
+
 .parent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  height: 100%;
+  
 }
 .random {
   width: 80px;
@@ -131,4 +134,38 @@ p {
   padding: 0;
   margin: 0;
  
+}
+.t {
+  display: flex;
+  
+
+}
+@media screen and (max-width: 1000px) {
+  .number {
+
+    width: 50px;
+    height:50px;
+   
+  }
+  .gameNumber {
+   font-size: 42px;   
+  }
+.random {
+  width: 60px;
+  height: 60px;
+}
+}
+@media screen and (max-width: 612px) {
+  .number {
+  
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  
+  }
+  
+  .random {
+    width: 55px;
+    height: 55px;
+  }
 }
