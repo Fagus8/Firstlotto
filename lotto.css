@@ -4,13 +4,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-
   display: flex;
-
   flex-direction: column;
- background-image: url(https://wallpapers.com/images/hd/black-and-yellow-lottery-balls-uyilierj0p5tgevw.jpg);
-background-repeat: no-repeat;
- background-size:cover;
+  background-color: #30425d;
 }
 .winning {
   margin: 0;
@@ -22,21 +18,19 @@ background-repeat: no-repeat;
 }
 .container {
   display: flex;
-   flex-direction: column;
-  height: 100%;
-
+  width: 70%;
+  height: 40%;
   justify-content: center;
   align-items: center;
-
-
+  flex-wrap: wrap;
   gap: 20px;
- 
+  background-color: #30425d;
 }
 .b {
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid rgb(229, 255, 0);
+  border: 1px solid aqua;
   background-color: transparent;
   color: white;
   margin-top: 10px;
@@ -48,8 +42,8 @@ background-repeat: no-repeat;
 .gameNumber {
   font-size: 72px;
   background: -webkit-linear-gradient(
-    rgb(14, 14, 14),
-    rgb(229, 255, 0)
+    rgba(242, 41, 91, 1),
+    rgba(0, 212, 255, 1)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,7 +51,6 @@ background-repeat: no-repeat;
 }
 .w {
   display: flex;
-justify-content: center;
   gap: 15px;
 }
 .v {
@@ -65,35 +58,31 @@ justify-content: center;
   display: flex;
   justify-content: center;
 }
-
 .rr {
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid rgb(229, 255, 0);
+  border: 1px solid aqua;
   background-color: transparent;
   color: white;
   margin-top: 10px;
   margin-left: 5px;
 }
-.r {
-  max-width: 100%;
-  display: flex;
- align-items: center;
-  flex-direction: column;
-}
 .rr:hover {
   cursor: pointer;
 }
-
+.r {
+  display: flex;
+ 
+  
+  flex-direction: column;
+}
 .parent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  height: 100%;
-  
 }
 .random {
   width: 80px;
@@ -107,7 +96,7 @@ justify-content: center;
   align-items: center;
   display: flex;
   border-radius: 50%;
-  border: 5px solid rgb(229, 255, 0);
+  border: 5px solid aqua;
   color: white;
   font-size: 40px;
 }
@@ -129,43 +118,7 @@ justify-content: center;
   border: 4px dashed;
   color: white;
 }
-
 p {
   padding: 0;
   margin: 0;
- 
-}
-.t {
-  display: flex;
-  
-
-}
-@media screen and (max-width: 1000px) {
-  .number {
-
-    width: 50px;
-    height:50px;
-   
-  }
-  .gameNumber {
-   font-size: 42px;   
-  }
-.random {
-  width: 60px;
-  height: 60px;
-}
-}
-@media screen and (max-width: 612px) {
-  .number {
-  
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-  
-  }
-  
-  .random {
-    width: 55px;
-    height: 55px;
-  }
 }
