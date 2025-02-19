@@ -4,7 +4,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+
   display: flex;
+
   flex-direction: column;
   background-color: #30425d;
 }
@@ -20,9 +22,11 @@ body {
   display: flex;
   width: 70%;
   height: 40%;
+
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
   gap: 20px;
   background-color: #30425d;
 }
@@ -51,6 +55,7 @@ body {
 }
 .w {
   display: flex;
+
   gap: 15px;
 }
 .v {
@@ -58,6 +63,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .rr {
   width: 100px;
   height: 30px;
@@ -118,6 +124,7 @@ body {
   border: 4px dashed;
   color: white;
 }
+
 p {
   padding: 0;
   margin: 0;
