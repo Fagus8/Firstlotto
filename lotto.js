@@ -7,7 +7,6 @@ let myb = document.querySelector(".b");
 let random = document.querySelectorAll(".random");
 let x = [];
 let y = [];
-let z = []
 let count1 = 0;
 let count = 0;
 let myindex;
@@ -22,7 +21,7 @@ for (let i = 0; i < mynumber.length; i++) {
       if (count1 < 6) {
         y.push(clickedNumber);
         count1++;
-        mynumber[i].style.border = "#2DF00C solid 6px";
+        mynumber[i].style.border = "aqua solid 6px";
       }
     } else {
       // აქ განმეორებით კლიკზე წაიშალოს არცჩეული რიცხვი
@@ -63,13 +62,8 @@ myb.addEventListener("click", function () {
 
     for (let i = 0; i < result.length; i++) {
       if (x.includes(result[i])) {
-        z.push(mynumber[result[i] - 1].innerText)
-        console.log(z);
-      
-     
-        console.log(z);
         count++;
-        mynumber[result[i] - 1].style.border = "5px solid #F0003E";
+        mynumber[result[i] - 1].style.border = "5px solid #FFD743";
       }
     }
 
@@ -80,20 +74,20 @@ myb.addEventListener("click", function () {
 
     // მოგების ლოგიკები
     if (count == 6) {
-      myh1.innerText = `Matches number: ${z}`;
-      myh1.style.color = "#2DF00C";
+      myh1.innerText = "Matches 6 Number. First Category Win !! ";
+      myh1.style.color = "aqua";
     } else if (count == 5) {
-      myh1.innerText = `Matches number: ${z}`;
-      myh1.style.color = "#2DF00C";
+      myh1.innerText = "Matches 5 Number. Second Category win !!";
+      myh1.style.color = "aqua";
     } else if (count == 4) {
-      myh1.innerText = `Matches number: ${z}`;
-      myh1.style.color = "#2DF00C";
+      myh1.innerText = "Matches 4 Number. Third Category Win !!";
+      myh1.style.color = "aqua";
     } else if (count == 2) {
-      myh1.innerText = `Matches number: ${z}`;
-      myh1.style.color = "#2DF00C";
+      myh1.innerText = " Matches 2 Number";
+      myh1.style.color = "aqua";
     } else if (count == 1) {
-      myh1.innerText = `Match number: ${z}`;
-      myh1.style.color = "#2DF00C";
+      myh1.innerText = " Matches 1 Number";
+      myh1.style.color = "aqua";
     }
   }
 });
@@ -111,11 +105,10 @@ myr.addEventListener("click", function () {
   for (let n of mynumber) {
     n.style.pointerEvents = "auto";
   }
-  myh1.innerText =""
+
   myb.style.pointerEvents = "auto";
   count = 0; 
   count1 = 0;
   x = []; 
   y = []; 
-  z = []
 });
