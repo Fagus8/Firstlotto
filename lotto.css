@@ -30,7 +30,7 @@ background-repeat: no-repeat;
 
 
   gap: 20px;
- 
+
 }
 .b {
   width: 100px;
@@ -76,10 +76,14 @@ justify-content: center;
   margin-top: 10px;
   margin-left: 5px;
 }
+
+
+
 .r {
   max-width: 100%;
   display: flex;
  align-items: center;
+
   flex-direction: column;
 }
 .rr:hover {
@@ -133,7 +137,7 @@ justify-content: center;
 p {
   padding: 0;
   margin: 0;
- 
+
 }
 .t {
   display: flex;
