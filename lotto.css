@@ -1,134 +1,83 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-
-  flex-direction: column;
- background-image: url(https://wallpapers.com/images/hd/black-and-yellow-lottery-balls-uyilierj0p5tgevw.jpg);
-background-repeat: no-repeat;
- background-size:cover;
-}
-.winning {
-  margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-right: 200px;
-  margin-top: 5px;
 }
 .container {
-  display: flex;
-  width: 70%;
-  height: 40%;
+display: flex;
+   flex-direction: column;
+  height: 100%;
 
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 
-  gap: 20px;
- 
-}
-.b {
-  width: 100px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid rgb(229, 255, 0);
-  background-color: transparent;
-  color: white;
-  margin-top: 10px;
-  margin-left: 5px;
-}
-.b:hover {
-  cursor: pointer;
-}
-.gameNumber {
-  font-size: 72px;
-  background: -webkit-linear-gradient(
-    rgb(14, 14, 14),
-    rgb(229, 255, 0)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  justify-content: center;
+
+gap: 20px;
+
+@@ -57,7 +57,7 @@ background-repeat: no-repeat;
 }
 .w {
-  display: flex;
-
-  gap: 15px;
+display: flex;
+justify-content: center;
+gap: 15px;
 }
 .v {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+@@ -76,21 +76,24 @@ background-repeat: no-repeat;
+margin-top: 10px;
+margin-left: 5px;
 }
-
-.rr {
-  width: 100px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid rgb(229, 255, 0);
-  background-color: transparent;
-  color: white;
-  margin-top: 10px;
-  margin-left: 5px;
+.r {
+  max-width: 100%;
+display: flex;
+ align-items: center;
+flex-direction: column;
 }
 .rr:hover {
   cursor: pointer;
 }
-.r {
-  display: flex;
- 
-  
-  flex-direction: column;
-}
+
 .parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+  height: 100%;
+  
 }
 .random {
-  width: 80px;
-  height: 80px;
-  background-color: transparent;
-  border-radius: 8px;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  justify-content: center;
-  align-items: center;
+width: 80px;
+@@ -132,3 +135,37 @@ p {
+margin: 0;
+
+}
+.t {
   display: flex;
-  border-radius: 50%;
-  border: 5px solid rgb(229, 255, 0);
-  color: white;
-  font-size: 40px;
+  
+
 }
-.number:hover {
-  cursor: pointer;
-}
-.number {
+@media screen and (max-width: 1000px) {
+  .number {
+
+    width: 50px;
+    height:50px;
+   
+  }
+  .gameNumber {
+   font-size: 42px;   
+  }
+.random {
   width: 60px;
   height: 60px;
-  background-color: transparent;
-  border-radius: 8px;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  border-radius: 50%;
-  border: 4px dashed;
-  color: white;
 }
-
-p {
-  padding: 0;
-  margin: 0;
- 
+}
+@media screen and (max-width: 612px) {
+  .number {
+  
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  
+  }
+  
+  .random {
+    width: 55px;
+    height: 55px;
+  }
 }
