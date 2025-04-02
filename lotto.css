@@ -1,69 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="lotto.css" />
-    <title>Lotto Game</title>
-</head>
-<body>
-    <div class="w">
-        <button class="b">Game</button>
-        <button class="rr">Reset</button>
-        <h1 class="winning"></h1>
-    </div>
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #30425d;
+}
 
-    <div class="parent">
-        <div class="r">
-            <div><h1 class="gameNumber">Winning Numbers</h1></div>
-            <div class="w">
-                <button class="random"></button>
-                <button class="random"></button>
-                <button class="random"></button>
-                <button class="random"></button>
-                <button class="random"></button>
-                <button class="random"></button>
-            </div>
-        </div>
-        <div class="container">
-            <button class="number c">1</button>
-            <button class="number c">2</button>
-            <button class="number c">3</button>
-            <button class="number c">4</button>
-            <button class="number c">5</button>
-            <button class="number c">6</button>
-            <button class="number c">7</button>
-            <button class="number c">8</button>
-            <button class="number c">9</button>
-            <button class="number c">10</button>
-            <button class="number c">11</button>
-            <button class="number c">12</button>
-            <button class="number c">13</button>
-            <button class="number c">14</button>
-            <button class="number c">15</button>
-            <button class="number c">16</button>
-            <button class="number c">17</button>
-            <button class="number c">18</button>
-            <button class="number c">19</button>
-            <button class="number c">20</button>
-            <button class="number c">21</button>
-            <button class="number c">22</button>
-            <button class="number c">23</button>
-            <button class="number c">24</button>
-            <button class="number c">25</button>
-            <button class="number c">26</button>
-            <button class="number c">27</button>
-            <button class="number c">28</button>
-            <button class="number c">29</button>
-            <button class="number c">30</button>
-            <button class="number c">31</button>
-            <button class="number c">32</button>
-            <button class="number c">33</button>
-            <button class="number c">34</button>
-            <button class="number c">35</button>
-            <button class="number c">36</button>
-        </div>
-    </div>
-    <script src="lotto.js"></script>
-</body>
-</html>
+.winning {
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+    color: red;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+  
+}
+
+
+.b, .rr {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 255, 0);
+    background-color: transparent;
+    color: white;
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+.b:hover, .rr:hover {
+    cursor: pointer;
+}
+
+.gameNumber {
+    font-size: 100px;
+    background: -webkit-linear-gradient(rgb(14, 14, 14), rgb(229, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.w {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.r {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.random {
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid rgb(229, 255, 0);
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px dashed;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number:hover {
+    cursor: pointer;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 810px) {
+  .winning{
+    font-size: 60px;
+   }
+  .gameNumber {
+      font-size: 70px;
+  }
+  .random{
+ 
+    width: 80px;
+    height: 80px;
+  }
+ 
+ .number {
+  width: 70px;
+  height: 70px;
+ }
+  .container {
+      gap: 10px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .winning{
+    font-size: 40px;
+   }
+  .gameNumber {
+    font-size: 50px;
+}
+.random{
+
+  width: 60px;
+  height: 60px;
+}
+
+.number {
+width: 45px;
+height: 45px;
+}
+.container {
+    gap: 10px;
+}
+} 
+
+@media (max-width: 450px) {
+ 
+ .winning{
+  font-size: 30px;
+ }
+  .gameNumber {
+    font-size: 40px;
+}
+.random{
+
+  width: 35px;
+  height: 35px;
+}
+
+.number {
+width: 35px;
+height: 35px;
+
+.container {
+    gap: 10px;
+}
+} }
+
+@media (max-width: 950px) and (orientation: landscape) {
+  .winning{
+    font-size: 60px;
+   }
+  .gameNumber {
+      font-size: 70px; 
+      padding: 0;
+      margin: 0;
+  }
+
+  .random {
+      width: 60px;
+      height: 60px;
+  }
+
+  .number {
+      width: 50px;
+      height: 50px;
+  }
+
+  .container {
+      gap: 8px; 
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  .winning{
+    font-size: 40px;
+   }
+  .gameNumber {
+      font-size: 50px; 
+      padding: 0;
+      margin: 0;
+  }
+
+  .random {
+      width: 40px;
+      height: 40px;
+  }
+
+  .number {
+      width: 40px;
+      height: 40px;
+  }
+
+  .container {
+      gap: 8px; 
+  }
+}
