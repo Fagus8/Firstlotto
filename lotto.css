@@ -13,6 +13,8 @@ body {
     margin: 5px auto;
     width: 100%;
     text-align: center;
+    font-size: 90px;
+    color: red;
 }
 
 .container {
@@ -44,7 +46,7 @@ body {
 }
 
 .gameNumber {
-    font-size: 40px;
+    font-size: 100px;
     background: -webkit-linear-gradient(rgb(14, 14, 14), rgb(229, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,8 +77,8 @@ body {
 }
 
 .random {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     background-color: transparent;
     border-radius: 50%;
     border: 3px solid rgb(229, 255, 0);
@@ -109,18 +111,108 @@ p {
     margin: 0;
 }
 
+@media (max-width: 810px) {
+  .gameNumber {
+      font-size: 70px;
+  }
+  .random{
+ 
+    width: 80px;
+    height: 80px;
+  }
+ 
+ .number {
+  width: 70px;
+  height: 70px;
+ }
+  .container {
+      gap: 10px;
+  }
+}
+
+
+
+
+
+
 @media (max-width: 600px) {
-    .gameNumber {
-        font-size: 30px;
-    }
+  .gameNumber {
+    font-size: 50px;
+}
+.random{
 
-    .container {
-        gap: 10px;
-    }
+  width: 60px;
+  height: 60px;
+}
 
-    .random, .number {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-    }
+.number {
+width: 45px;
+height: 45px;
+}
+.container {
+    gap: 10px;
+}
+} 
+
+@media (max-width: 450px) {
+  .gameNumber {
+    font-size: 40px;
+}
+.random{
+
+  width: 35px;
+  height: 35px;
+}
+
+.number {
+width: 35px;
+height: 35px;
+
+.container {
+    gap: 10px;
+}
+} }
+
+@media (max-width: 950px) and (orientation: landscape) {
+  .gameNumber {
+      font-size: 70px; /* შევამცირებთ ფონტის ზომას ლანდშაფტურ რეჟიმში */
+      padding: 0;
+      margin: 0;
+  }
+
+  .random {
+      width: 60px;
+      height: 60px;
+  }
+
+  .number {
+      width: 50px;
+      height: 50px;
+  }
+
+  .container {
+      gap: 8px; /* შევამცირებთ მანძილს ღილაკებს შორის ლანდშაფტურ რეჟიმში */
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  .gameNumber {
+      font-size: 50px; /* შევამცირებთ ფონტის ზომას ლანდშაფტურ რეჟიმში */
+      padding: 0;
+      margin: 0;
+  }
+
+  .random {
+      width: 40px;
+      height: 40px;
+  }
+
+  .number {
+      width: 40px;
+      height: 40px;
+  }
+
+  .container {
+      gap: 8px; /* შევამცირებთ მანძილს ღილაკებს შორის ლანდშაფტურ რეჟიმში */
+  }
 }
