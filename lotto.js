@@ -87,4 +87,5 @@ myr.addEventListener("click", function () {
     x = [];
     y = [];
     z = [];
-});
+})
+;
