@@ -112,6 +112,9 @@ p {
 }
 
 @media (max-width: 810px) {
+  .winning{
+    font-size: 60px;
+   }
   .gameNumber {
       font-size: 70px;
   }
@@ -136,6 +139,9 @@ p {
 
 
 @media (max-width: 600px) {
+  .winning{
+    font-size: 40px;
+   }
   .gameNumber {
     font-size: 50px;
 }
@@ -155,6 +161,10 @@ height: 45px;
 } 
 
 @media (max-width: 450px) {
+ 
+ .winning{
+  font-size: 30px;
+ }
   .gameNumber {
     font-size: 40px;
 }
@@ -174,8 +184,11 @@ height: 35px;
 } }
 
 @media (max-width: 950px) and (orientation: landscape) {
+  .winning{
+    font-size: 60px;
+   }
   .gameNumber {
-      font-size: 70px; /* შევამცირებთ ფონტის ზომას ლანდშაფტურ რეჟიმში */
+      font-size: 70px; 
       padding: 0;
       margin: 0;
   }
@@ -191,13 +204,16 @@ height: 35px;
   }
 
   .container {
-      gap: 8px; /* შევამცირებთ მანძილს ღილაკებს შორის ლანდშაფტურ რეჟიმში */
+      gap: 8px; 
   }
 }
 
 @media (max-width: 850px) and (orientation: landscape) {
+  .winning{
+    font-size: 40px;
+   }
   .gameNumber {
-      font-size: 50px; /* შევამცირებთ ფონტის ზომას ლანდშაფტურ რეჟიმში */
+      font-size: 50px; 
       padding: 0;
       margin: 0;
   }
@@ -213,6 +229,6 @@ height: 35px;
   }
 
   .container {
-      gap: 8px; /* შევამცირებთ მანძილს ღილაკებს შორის ლანდშაფტურ რეჟიმში */
+      gap: 8px; 
   }
 }
