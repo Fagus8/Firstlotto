@@ -1,32 +1,29 @@
 html,
 body {
-    width: 100%;
-    height: 100%;
+ 
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     background-color: #30425d;
+    max-width: 100%;
 }
 
 .winning {
     margin: 5px auto;
     width: 100%;
     text-align: center;
-    font-size: 90px;
+
     color: red;
 }
 
 .container {
     display: flex;
-    width: 90%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+      max-width: 100%;
     flex-wrap: wrap;
-    
-    gap: 20px;
-  
+ justify-content: center;
+  align-items:center; 
+  gap:10px;
 }
 
 
@@ -58,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 .r {
@@ -77,8 +74,8 @@ body {
 }
 
 .random {
-    width: 90px;
-    height: 90px;
+  width: 190px;
+  height: 190px;
     background-color: transparent;
     border-radius: 50%;
     border: 3px solid rgb(229, 255, 0);
@@ -87,17 +84,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .number {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 60px;
     background-color: transparent;
     border-radius: 50%;
     border: 3px dashed;
     color: white;
     font-size: 16px;
     display: flex;
+    
     justify-content: center;
     align-items: center;
 }
@@ -111,12 +110,23 @@ p {
     margin: 0;
 }
 
-@media (max-width: 810px) {
-  .winning{
-    font-size: 60px;
-   }
+@media (max-width: 1175px) {
+
+.random{
+  width: 130px;
+  height: 100px;
+}
+.number {
+  width: 70px;
+  height: 60px;
+}
+
+}
+@media (max-width: 850px) {
+
+   .w
   .gameNumber {
-      font-size: 70px;
+      font-size: 120px;
   }
   .random{
  
@@ -125,8 +135,8 @@ p {
   }
  
  .number {
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
  }
   .container {
       gap: 10px;
@@ -134,101 +144,179 @@ p {
 }
 
 
+  @media (max-width: 950px)  {
+  .winning{
+    font-size: 30px;
+   
+   }
+  
+ 
+  .random {
+      width: 125px;
+      height: 90px;
+  }
+  .w {
+    gap: 20px;
+  }
 
+  .number {
+      width: 80px;
+      height: 55px;
+  }
+
+  .container {
+      gap: 8px; 
+  }
+  .gameNumber {
+    font-size: 70px; 
+    padding: 0;
+    margin: 0;
+}
+}  
+
+
+@media (max-width: 450px)  {
+
+
+
+.gameNumber {
+  font-size: 1px;
+}
+
+
+
+
+
+}
 
 
 
 @media (max-width: 600px) {
-  .winning{
-    font-size: 40px;
-   }
+  
   .gameNumber {
     font-size: 50px;
-}
+ }
 .random{
 
   width: 60px;
   height: 60px;
-}
-
-.number {
-width: 45px;
-height: 45px;
-}
-.container {
-    gap: 10px;
-}
-} 
-
-@media (max-width: 450px) {
- 
- .winning{
-  font-size: 30px;
  }
-  .gameNumber {
-    font-size: 40px;
-}
-.random{
 
-  width: 35px;
-  height: 35px;
-}
-
-.number {
-width: 35px;
-height: 35px;
-
-.container {
+ .number {
+ width: 45px;
+ height: 45px;
+ }
+ .container {
     gap: 10px;
+ }
 }
-} }
 
-@media (max-width: 950px) and (orientation: landscape) {
+
+
+
   .winning{
-    font-size: 60px;
+    font-size: 30px;
+    box-sizing: border-box;
    }
-  .gameNumber {
-      font-size: 70px; 
-      padding: 0;
-      margin: 0;
+  
+ 
+  .random {
+      width: 120px;
+      height: 80px;
+  }
+  .w {
+    gap: 20px;
   }
 
-  .random {
+  .number {
       width: 60px;
-      height: 60px;
-  }
-
-  .number {
-      width: 50px;
-      height: 50px;
+      height: 35px;
   }
 
   .container {
       gap: 8px; 
   }
+  .gameNumber {
+    font-size: 70px; 
+    padding: 0;
+    margin: 0;
 }
 
-@media (max-width: 850px) and (orientation: landscape) {
+
+ @media (max-width: 850px) {
   .winning{
-    font-size: 40px;
+    font-size: 25px;
    }
   .gameNumber {
-      font-size: 50px; 
+      font-size: 90px; 
       padding: 0;
       margin: 0;
   }
 
   .random {
-      width: 40px;
-      height: 40px;
+      width: 80px;
+      height: 80px;
   }
 
   .number {
-      width: 40px;
-      height: 40px;
+      width: 70px;
+      height: 59px;
   }
 
   .container {
       gap: 8px; 
+  }
+  .w {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .winning {
+    font-size: 25px;
+    
+  }
+.gameNumber {
+  font-size:50px ;
+}
+
+
+.random {
+  width: 60px;
+  height: 60px;
+  
+}
+.number {
+  width: 65px;
+  height: 60px;
+}
+
+
+}
+
+
+@media (max-width: 465px) {
+
+
+  .gameNumber {
+    font-size: 40px;
+  }
+  .random {
+    width: 41px;
+    height: 41px;
+    font-size: 17px;
+  }
+
+  .number {
+    width: 40px;
+    height: 50px;
+  }
+  .container {
+    display: flex;
+    gap: 13px;
+  }
+  .winning {
+    font-size: 22px;
   }
 }
